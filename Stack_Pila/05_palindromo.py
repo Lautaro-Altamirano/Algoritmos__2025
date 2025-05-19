@@ -15,7 +15,7 @@ if palabra == palabra_inversa:
     print(f"--{palabra} es un políndromo")
 else:print(f"--{palabra} no es un políndromo")
 
-# otra forma comparando pila con pila_inversa---no optimo
+# otra forma comparando pila con pila_inversa-
 # while pila_principal.size() > 0:
 #     eliminada = pila_principal.pop()
 #     pila_aux.push(eliminada)
