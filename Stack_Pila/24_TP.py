@@ -78,14 +78,14 @@ def mas_5_peliculas(pila:Stack):
         
     return pers 
 
-def buscar(pila:Stack):
+def buscar(pila:Stack,comparacion:str):
     aux = Stack()
     participaciones = 0
     
     while pila.size() > 0:
         eliminado = pila.pop()
         
-        if eliminado["Nombre"].upper() == "BLACK WIDOW":
+        if eliminado["Nombre"].upper() == comparacion:
             participaciones = eliminado["Peliculas"]
             
         aux.push(eliminado)
@@ -111,7 +111,7 @@ def nombres_C_D_G(pila:Stack):
         
 cragar_personajes(pila_principal)
 posiciones = posicion_Rocket_Groot(pila_principal,"ROCKET RACCOON","GROOT")
-buscar(pila_principal)
+buscar(pila_principal,"BLACK WIDOW")
 if posiciones:
     print()
     print("Posiciónes en la que se encuentran en la pila:")
@@ -126,4 +126,5 @@ else:
 print()
 nombres_C_D_G(pila_principal)
 print()
+
         
