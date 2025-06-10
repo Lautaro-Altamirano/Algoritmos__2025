@@ -723,7 +723,7 @@ superheroes = [
     {
         "name": "Sentinel",
         "alias": "Sentinel",
-        "real_name": "nnnnnnnnnn",
+        "real_name": "Sentinel",
         "short_bio": "Large robots created to hunt and capture mutants.",
         "first_appearance": 1965,
         "is_villain": True
