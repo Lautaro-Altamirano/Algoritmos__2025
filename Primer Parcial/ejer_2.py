@@ -122,8 +122,16 @@ for supehero in lista_supeheroes:
         print(f"- {supehero.nombre}")
 
 # Eliminar a Electro y Baron Zemo de la lista y mostrar su información si estaba en la lista.
-lista_supeheroes.delete_value("Electro","nombre")
-lista_supeheroes.delete_value("Baron Zemo","nombre")
+index = lista_supeheroes.delete_value("Electro","nombre")
+if index:
+    print(index)
+else:
+    print("Electro no encontrado")
+index = lista_supeheroes.delete_value("Baron Zemo","nombre")
+if index:
+    print(index)
+else:
+    print("Baron Zemo no encontrado")
 
  # Listado de personajes ordenado por nombre real de manera ascendente de los personajes.
 # lista_supeheroes.sort_by_criterion(str("real_nombre"))
