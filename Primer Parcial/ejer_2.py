@@ -100,9 +100,9 @@ for superhero in lista_supeheroes:
         print(f"- {superhero.nombre}")
 
 
-# Listado de superheroes ordenados por fecha de aparación.
+# Listado de superheroes ordenados por fecha de aparición.
 print()
-print("- Listado de superheroes ordenados por fecha de aparación :")
+print("- Listado de superheroes ordenados por fecha de aparición :")
 lista_supeheroes.sort_by_criterion("aparicion")
 listado(lista_supeheroes,True)
 
@@ -122,17 +122,21 @@ for supehero in lista_supeheroes:
         print(f"- {supehero.nombre}")
 
 # Eliminar a Electro y Baron Zemo de la lista y mostrar su información si estaba en la lista.
+print()
 index = lista_supeheroes.delete_value("Electro","nombre")
 if index:
-    print(index)
+    print(f"- {index}")
 else:
     print("Electro no encontrado")
 index = lista_supeheroes.delete_value("Baron Zemo","nombre")
 if index:
-    print(index)
+    print(f"- {index}")
 else:
     print("Baron Zemo no encontrado")
 
  # Listado de personajes ordenado por nombre real de manera ascendente de los personajes.
-# lista_supeheroes.sort_by_criterion(str("real_nombre"))
-# listado(lista_supeheroes,False)
+print()
+print("- Listado de personajes ordenado por nombre real de manera ascendente de los personajes: ")
+lista_supeheroes.sort_by_criterion((str("real_nombre")))
+listado(lista_supeheroes,False)
+
